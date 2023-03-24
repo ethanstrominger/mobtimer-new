@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mobtimer-new/static/css/main.5fedc09c.css",
-    "main.js": "/mobtimer-new/static/js/main.afa6e023.js",
-    "static/js/787.18de5bbe.chunk.js": "/mobtimer-new/static/js/787.18de5bbe.chunk.js",
-    "index.html": "/mobtimer-new/index.html",
-    "main.5fedc09c.css.map": "/mobtimer-new/static/css/main.5fedc09c.css.map",
-    "main.afa6e023.js.map": "/mobtimer-new/static/js/main.afa6e023.js.map",
-    "787.18de5bbe.chunk.js.map": "/mobtimer-new/static/js/787.18de5bbe.chunk.js.map"
+    "main.css": "/ethanstrominger/mobtimer-new/static/css/main.5fedc09c.css",
+    "main.js": "/ethanstrominger/mobtimer-new/static/js/main.02a655eb.js",
+    "static/js/787.18de5bbe.chunk.js": "/ethanstrominger/mobtimer-new/static/js/787.18de5bbe.chunk.js",
+    "index.html": "/ethanstrominger/mobtimer-new/index.html",
+    "main.5fedc09c.css.map": "/ethanstrominger/mobtimer-new/static/css/main.5fedc09c.css.map",
+    "main.02a655eb.js.map": "/ethanstrominger/mobtimer-new/static/js/main.02a655eb.js.map",
+    "787.18de5bbe.chunk.js.map": "/ethanstrominger/mobtimer-new/static/js/787.18de5bbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fedc09c.css",
-    "static/js/main.afa6e023.js"
+    "static/js/main.02a655eb.js"
   ]
 }
