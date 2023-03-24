@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/mobtimer/static/css/main.5fedc09c.css",
-    "main.js": "/mobtimer/static/js/main.3f406957.js",
-    "static/js/787.18de5bbe.chunk.js": "/mobtimer/static/js/787.18de5bbe.chunk.js",
-    "index.html": "/mobtimer/index.html",
-    "main.5fedc09c.css.map": "/mobtimer/static/css/main.5fedc09c.css.map",
-    "main.3f406957.js.map": "/mobtimer/static/js/main.3f406957.js.map",
-    "787.18de5bbe.chunk.js.map": "/mobtimer/static/js/787.18de5bbe.chunk.js.map"
+    "main.css": "/static/css/main.5fedc09c.css",
+    "main.js": "/static/js/main.a3e9fca7.js",
+    "static/js/787.18de5bbe.chunk.js": "/static/js/787.18de5bbe.chunk.js",
+    "index.html": "/index.html",
+    "main.5fedc09c.css.map": "/static/css/main.5fedc09c.css.map",
+    "main.a3e9fca7.js.map": "/static/js/main.a3e9fca7.js.map",
+    "787.18de5bbe.chunk.js.map": "/static/js/787.18de5bbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fedc09c.css",
-    "static/js/main.3f406957.js"
+    "static/js/main.a3e9fca7.js"
   ]
 }
