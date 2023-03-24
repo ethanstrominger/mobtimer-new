@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.5fedc09c.css",
-    "main.js": "/static/js/main.a3e9fca7.js",
-    "static/js/787.18de5bbe.chunk.js": "/static/js/787.18de5bbe.chunk.js",
-    "index.html": "/index.html",
-    "main.5fedc09c.css.map": "/static/css/main.5fedc09c.css.map",
-    "main.a3e9fca7.js.map": "/static/js/main.a3e9fca7.js.map",
-    "787.18de5bbe.chunk.js.map": "/static/js/787.18de5bbe.chunk.js.map"
+    "main.css": "/mobtimer-new/static/css/main.5fedc09c.css",
+    "main.js": "/mobtimer-new/static/js/main.afa6e023.js",
+    "static/js/787.18de5bbe.chunk.js": "/mobtimer-new/static/js/787.18de5bbe.chunk.js",
+    "index.html": "/mobtimer-new/index.html",
+    "main.5fedc09c.css.map": "/mobtimer-new/static/css/main.5fedc09c.css.map",
+    "main.afa6e023.js.map": "/mobtimer-new/static/js/main.afa6e023.js.map",
+    "787.18de5bbe.chunk.js.map": "/mobtimer-new/static/js/787.18de5bbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fedc09c.css",
-    "static/js/main.a3e9fca7.js"
+    "static/js/main.afa6e023.js"
   ]
 }
