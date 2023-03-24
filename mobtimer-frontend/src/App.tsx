@@ -13,7 +13,7 @@ const App = () => {
   // State variables - todo: consider grouping two or more of these into a single object, e.g., see the "Group Related State" section of https://blog.bitsrc.io/5-best-practices-for-handling-state-structure-in-react-f011e842076e
   const [mobName, setMobName] = useState('');
   const [loaded, setLoaded] = useState(false);
-  const [timeString, setTimeString] = useState(frontendMobTimer.secondsRemainingString);
+s  const [timeString, setTimeString] = useState(frontendMobTimer.secondsRemainingString);
   const [actionButtonLabel, setActionButtonLabel] = useState('');
   const [durationMinutes, setDurationMinutes] = useState(frontendMobTimer.durationMinutes);
   const [participants, setParticipants] = useState(frontendMobTimer.participants);
@@ -88,7 +88,7 @@ const App = () => {
 
   console.log('aaaa6');
   // Browser router
-  return <HashRouter>
+  return <div>
     <Routes>
       <Route path="/" element={<Launch />} />
       <Route path="/:mobNameUrlParam"
@@ -102,7 +102,7 @@ const App = () => {
           submitJoinMobRequest={submitJoinMobRequest} />} />
     </Routes>
 
-  </HashRouter >;
+  </div >;
 }
 
 export default App;
