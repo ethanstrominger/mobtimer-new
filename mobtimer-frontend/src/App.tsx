@@ -88,7 +88,7 @@ const App = () => {
 
   console.log('aaaa6');
   // Browser router
-  return <div>
+  return <HashRouter>
     <Routes>
       <Route path="/" element={<Launch />} />
       <Route path="/:mobNameUrlParam"
@@ -102,7 +102,7 @@ const App = () => {
           submitJoinMobRequest={submitJoinMobRequest} />} />
     </Routes>
 
-  </div >;
+  </HashRouter >;
 }
 
 export default App;
