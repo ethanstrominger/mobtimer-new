@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/mobtimer/static/css/main.5fedc09c.css",
-    "main.js": "/mobtimer/static/js/main.5ad10ffd.js",
+    "main.js": "/mobtimer/static/js/main.3f406957.js",
     "static/js/787.18de5bbe.chunk.js": "/mobtimer/static/js/787.18de5bbe.chunk.js",
     "index.html": "/mobtimer/index.html",
     "main.5fedc09c.css.map": "/mobtimer/static/css/main.5fedc09c.css.map",
-    "main.5ad10ffd.js.map": "/mobtimer/static/js/main.5ad10ffd.js.map",
+    "main.3f406957.js.map": "/mobtimer/static/js/main.3f406957.js.map",
     "787.18de5bbe.chunk.js.map": "/mobtimer/static/js/787.18de5bbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5fedc09c.css",
-    "static/js/main.5ad10ffd.js"
+    "static/js/main.3f406957.js"
   ]
 }
