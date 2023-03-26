@@ -6,7 +6,7 @@ const Launch = () => {
     return (
         <div>
             <div className="LaunchMain">
-                <h1>A collaborative timer eth4an</h1>
+                <h1>A collaborative timer eth54an</h1>
                 <h2>for your mob team</h2>
                 <JoinMobForm />
                 <p><a href="https://www.google.com/search?q=mob+programming" rel="noreferrer">
