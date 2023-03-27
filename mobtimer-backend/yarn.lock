@@ -3242,7 +3242,7 @@ minimatch@^5.0.1:
   dependencies:
     brace-expansion "^2.0.1"
 
-mobtimer-api@^1.0.3:
+mobtimer-api@^1.0.5:
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/mobtimer-api/-/mobtimer-api-1.0.5.tgz#fbc5bb03f4a44eeef75fe411ae9f682cae2e4f44"
   integrity sha512-gjyhBNjIwq+XtgKIWRDoyxKhNjo3oiuGNEbl5mAy/1YmFyemUutiUEDCC4Xy3QbY6Vglag77UK+cU72LvDm10Q==

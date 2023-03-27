@@ -1,12 +1,12 @@
 import { Status } from 'mobtimer-api';
 import { MobTimerResponses } from 'mobtimer-api';
-import { MobSocketClient } from 'mobtimer-api';
+import { MobSocketClient } from './mobSocketClient';
 import { Action, MobTimer } from 'mobtimer-api';
 
 export class Controller {
 
-  static getAppTitle() { 
-    return "Mob Timer"; 
+  static getAppTitle() {
+    return "Mob Timer";
   }
 
   // injections -----------------------

@@ -1,5 +1,7 @@
-import { MobSocketClient, MobTimer } from "mobtimer-api";
+import { MobTimer } from "mobtimer-api";
+
 import { soundSource } from "./assets/soundSource";
+import { MobSocketClient } from "./mobSocketClient";
 
 // todo: unhardcode port
 const url =
