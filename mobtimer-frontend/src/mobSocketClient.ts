@@ -36,9 +36,8 @@ class MobSocketClient {
     socket: { readyState: number },
     state: number
   ): Promise<void> {
-    const client = this;
     return new Promise(function (resolve) {
-      const timeout = setTimeout(function () {
+      setTimeout(function () {
         if (socket.readyState === state) {
           resolve();
         } else {

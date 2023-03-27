@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { client } from '../timers';
 
 const RotateParticipants = () => {
-    
+
     const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
         client.rotateParticipants();
