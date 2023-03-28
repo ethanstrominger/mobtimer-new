@@ -32,48 +32,48 @@ const App = () => {
 
     setLoaded(true);
 
-    client.webSocket.onmessage = (message: { data: string; }) => {
+    // client.webSocket.onmessage = (message: { data: string; }) => {
 
-      // Get response from server
-      const response = JSON.parse(message.data) as MobTimerResponses.SuccessfulResponse;
+    //   // Get response from server
+    //   const response = JSON.parse(message.data) as MobTimerResponses.SuccessfulResponse;
 
-      // todo: handle if response is not successful
+    //   // todo: handle if response is not successful
 
-      console.log("Mob: " + response.mobState.mobName +
-        " (" + response.mobState.participants.length + " Participant(s):" + response.mobState.participants.join(",") + "), " +
-        "Action:" + response.actionInfo.action + ", " +
-        "Status:" + response.mobState.status + ", DurationMin:" + response.mobState.durationMinutes + ", " +
-        "RemainingSec:" + response.mobState.secondsRemaining + " (" + TimeUtils.getTimeString(response.mobState.secondsRemaining) + ") "
-      );
+    //   console.log("Mob: " + response.mobState.mobName +
+    //     " (" + response.mobState.participants.length + " Participant(s):" + response.mobState.participants.join(",") + "), " +
+    //     "Action:" + response.actionInfo.action + ", " +
+    //     "Status:" + response.mobState.status + ", DurationMin:" + response.mobState.durationMinutes + ", " +
+    //     "RemainingSec:" + response.mobState.secondsRemaining + " (" + TimeUtils.getTimeString(response.mobState.secondsRemaining) + ") "
+    //   );
 
-      // Status
-      const mobStatus = Controller.getStatus(response);
-      //setStatus(status);
+    //   // Status
+    //   const mobStatus = Controller.getStatus(response);
+    //   //setStatus(status);
 
-      // Duration minutes
-      const durationMinutes = Controller.getDurationMinutes(response);
-      setDurationMinutes(durationMinutes);
+    //   // Duration minutes
+    //   const durationMinutes = Controller.getDurationMinutes(response);
+    //   setDurationMinutes(durationMinutes);
 
-      // Participants
-      const participants = Controller.getParticipants(response);
-      setParticipants(participants);
+    //   // Participants
+    //   const participants = Controller.getParticipants(response);
+    //   setParticipants(participants);
 
-      // Sync frontend timer
-      const secondsRemaining = Controller.getSecondsRemaining(response);
-      Controller.changeStatus(frontendMobTimer, mobStatus, Controller.getAction(response));
-      frontendMobTimer.setSecondsRemaining(secondsRemaining);
-      setTimeString(frontendMobTimer.secondsRemainingString);
-      const label = Controller.getActionButtonLabel(mobStatus);
-      setActionButtonLabel(label);
+    //   // Sync frontend timer
+    //   const secondsRemaining = Controller.getSecondsRemaining(response);
+    //   Controller.changeStatus(frontendMobTimer, mobStatus, Controller.getAction(response));
+    //   frontendMobTimer.setSecondsRemaining(secondsRemaining);
+    //   setTimeString(frontendMobTimer.secondsRemainingString);
+    //   const label = Controller.getActionButtonLabel(mobStatus);
+    //   setActionButtonLabel(label);
 
-      if (response.mobState.status !== frontendMobTimer.status) {
-        console.log("PROBLEM - FRONT AND BACK END STATUS MISMATCH!!!!!!!!!! --- " +
-          "Frontend Status: " + frontendMobTimer.status + ", " +
-          "Backend Status:" + response.mobState.status);
-      };
-    };
+    //   if (response.mobState.status !== frontendMobTimer.status) {
+    //     console.log("PROBLEM - FRONT AND BACK END STATUS MISMATCH!!!!!!!!!! --- " +
+    //       "Frontend Status: " + frontendMobTimer.status + ", " +
+    //       "Backend Status:" + response.mobState.status);
+    //   };
+    // };
 
-    await client.waitForSocketState(WebSocket.OPEN);
+    await client.waitForSocketState("open");
     client.joinMob(mobName);
     console.log('joined mob', mobName, client);
   }

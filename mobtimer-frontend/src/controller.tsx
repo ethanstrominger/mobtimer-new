@@ -1,6 +1,6 @@
 import { Status } from 'mobtimer-api';
 import { MobTimerResponses } from 'mobtimer-api';
-import { MobSocketClient } from './mobSocketClient';
+import { MobSocketClient2 } from './mobSocketClient2';
 import { Action, MobTimer } from 'mobtimer-api';
 
 export class Controller {
@@ -62,7 +62,7 @@ export class Controller {
     };
   }
 
-  static toggle(client: MobSocketClient, frontendMobtimer: MobTimer) {
+  static toggle(client: MobSocketClient2, frontendMobtimer: MobTimer) {
     switch (frontendMobtimer.status) {
       case Status.Running: { client.pause(); frontendMobtimer.pause(); break; }
       case Status.Paused: { client.start(); frontendMobtimer.start(); break; }

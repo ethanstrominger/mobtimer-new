@@ -1,28 +1,28 @@
-import { Action } from "./action";
-import * as MobTimerRequests from "./mobTimerRequests";
+import { Action } from "mobtimer-api";
+import { MobTimerRequests } from "mobtimer-api";
 import { WebSocket2Type } from "./webSocket2Type";
-import { w3cwebsocket as W3CWebSocket } from "websocket";
+import { WebSocket2 } from "./webSocket2";
 
-class MobSocketClient {
+class MobSocketClient2 {
   private _webSocket: WebSocket2Type;
 
   constructor(webSocket: WebSocket2Type) {
     this._webSocket = webSocket;
   }
 
-  static openSocketSync(url: string): MobSocketClient {
+  static openSocketSync(url: string): MobSocketClient2 {
     console.log("opening socket");
-    const socket = new W3CWebSocket(url);
-    const mobSocketClient = new MobSocketClient(socket);
+    const socket = new WebSocket2(url);
+    const mobSocketClient = new MobSocketClient2(socket);
     return mobSocketClient;
   }
 
-  static async openSocket(url: string): Promise<MobSocketClient> {
-    const socket = new W3CWebSocket(url);
-    const mobSocketClient = new MobSocketClient(socket);
-    await MobSocketClient.waitForSocketState(
+  static async openSocket(url: string): Promise<MobSocketClient2> {
+    const socket = new WebSocket2(url);
+    const mobSocketClient = new MobSocketClient2(socket);
+    await MobSocketClient2.waitForSocketState(
       mobSocketClient.webSocket,
-      mobSocketClient.webSocket.OPEN
+      "open"
     );
     return mobSocketClient;
   }
@@ -33,16 +33,16 @@ class MobSocketClient {
    * @param state The desired `readyState` for the socket
    */
   static waitForSocketState(
-    socket: { readyState: number },
-    state: number
+    socket: WebSocket2Type,
+    state: string
   ): Promise<void> {
-    const client = this;
     return new Promise(function (resolve) {
-      const timeout = setTimeout(function () {
-        if (socket.readyState === state) {
+      setTimeout(function () {
+        const isReady = state === "open" ? socket.isOpen() : socket.isClosed();
+        if (isReady) {
           resolve();
         } else {
-          MobSocketClient.waitForSocketState(socket, state).then(resolve);
+          MobSocketClient2.waitForSocketState(socket, state).then(resolve);
         }
       });
       // todo: timeout.unref() fails when running from frontend; why?
@@ -50,8 +50,8 @@ class MobSocketClient {
     });
   }
 
-  public waitForSocketState(state: number): Promise<void> {
-    return MobSocketClient.waitForSocketState(this._webSocket, state);
+  public waitForSocketState(state: string): Promise<void> {
+    return MobSocketClient2.waitForSocketState(this._webSocket, state);
   }
 
   sendEchoRequest() {
@@ -105,8 +105,8 @@ class MobSocketClient {
 
   async closeSocket() {
     this.webSocket.close();
-    await this.waitForSocketState(this.webSocket.CLOSED);
+    await this.waitForSocketState("closed");
   }
 }
 
-export { MobSocketClient };
+export { MobSocketClient2 };

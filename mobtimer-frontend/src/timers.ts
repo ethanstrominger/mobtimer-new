@@ -1,13 +1,13 @@
 import { MobTimer } from "mobtimer-api";
 
 import { soundSource } from "./assets/soundSource";
-import { MobSocketClient } from "./mobSocketClient";
+import { MobSocketClient2 } from "./mobSocketClient2";
 
 // todo: unhardcode port
 const url =
   process.env.REACT_APP_WEBSOCKET_URL ||
   `ws://localhost:${process.env.REACT_APP_WEBSOCKET_PORT || "4000"}`;
-export const client = MobSocketClient.openSocketSync(url);
+export const client = MobSocketClient2.openSocketSync(url);
 console.log("url", url);
 console.log("process.env", process.env);
 
