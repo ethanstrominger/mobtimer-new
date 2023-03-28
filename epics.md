@@ -1,6 +1,6 @@
 # Epics / Categories
 
-<detail>
+<details>
   
   <summary>
     Finish deploy
@@ -8,7 +8,7 @@
 
 - Copy changes from mobtimer-new repo, mobtimer-frontend</summary>
 
-- <detail>
+- <details>
   
   <summary> 
     [ ] Deploy mobtimer-frontend to render.com (or vercel.com)
@@ -18,7 +18,7 @@
   - [ ] Verify working
   - [ ] Update CONTRIBUTING.md
 
-</detail>
+</details>
 
 </detail>
 
