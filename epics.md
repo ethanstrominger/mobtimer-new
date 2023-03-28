@@ -2,13 +2,17 @@
 
 <detail>
   
-  <summary>Finish deploy</summary>
+  <summary>
+    Finish deploy
+  </summary>
 
 - Copy changes from mobtimer-new repo, mobtimer-frontend</summary>
 
 - <detail>
   
-  <summary> [ ] Deploy mobtimer-frontend to render.com (or vercel.com)</summary>
+  <summary> 
+    [ ] Deploy mobtimer-frontend to render.com (or vercel.com)
+  </summary>
 
   - [ ] Set REACT_APP_WEBSOCKET_URL to something like: wss://final1-u56m.onrender.com
   - [ ] Verify working
