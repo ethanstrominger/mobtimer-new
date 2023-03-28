@@ -87,9 +87,12 @@
 <details><summary>rethink mobtimer-api</summary><blockquote>
 
 - [ ] separate into different repos? see [Multi-Repo Proposal](./proposal-multiple-repos.md)
+- [ ] refactor mobtimerclient to take a socket
+- [ ] solve websocket error
+- [ ] make npmjs package more like other packages
 - [ ] change to d.ts, create type library
 - [ ] create separate time library?
-- [ ] create separate mobtimer library?
+- [ ] create separate mobtimerclient library?
 
 </blockquote></details>
 
