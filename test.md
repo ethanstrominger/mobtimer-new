@@ -1,7 +1,7 @@
-<detail>
+<details>
   <summary>
     a
   </summary>
   asfdasdf
-</detail>
+</details>
   
