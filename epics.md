@@ -14,41 +14,41 @@
 
 </blockquote></details>
 
-## Participant UI (reorder, edit, delete, drag/drop)
+<details><summary>Participant UI (reorder, edit, delete, drag/drop)</summary><blockquote>
 
-### [ ] Proposal: create route for replacing all existing participants, all work done in UI
+- [ ] Proposal: create route for replacing all existing participants, all work done in UI
+- [ ] UI: Reorder participants with drag/drop
+- [ ] UI: Rename participant
+- [ ] UI: Delete participant
 
-### [ ] UI: Reorder participants with drag/drop
+</details></blockquote>
 
-### [ ] UI: Rename participant
+<details><summary>Pitch for front page</summary><blockquote>
 
-### [ ] UI: Delete participant
+- [ ] Reg scheduled events
+- [ ] Encourage pairing on real projects
+- [ ] How this project was done
 
-## Pitch for front page
+</blockquote></details>
 
-### [ ] Reg scheduled events
+<details><summary>Additional features</summary><blockquote>
 
-### [ ] Encourage pairing on real projects
+<details><summary>Must Have</summary><blockquote>
 
-### [ ] How this project was done
+- [ ] Randomize order
+- [ ] Roles
+- [ ] Cancel
 
-## [ ] Additional features
+</blockquote></details>
 
-## [ ] Must Have
+<details><summary>Should Have features</summary><blockquote>
 
-### [ ] Randomize order
+- [ ] Turn on/off sound
+- [ ] Notifications
 
-### [ ] Roles
-
-### [ ] Cancel
-
-## [ ] Should Have features
-
-### [ ] Turn on/off sound
-
-### [ ] Notifications
-
-## [ ] Could Have
+</blockquote></details>
+  
+<details><summary>Could Have</summary><blockquote>
 
 - [ ] When update duration minutes, don't change the time remaining for the currently running timer (if running); just store in nextDurationMinutes (or similar)
 - [ ] Handle illegal characters in mobName
@@ -57,37 +57,43 @@
 - [ ] Disable buttons as appropriate, e.g., if no legal mobName don't allow to click Join button
 - [ ] In UI listener, handle if response is not successful
 
-## Investigate
+</blockquote></details>
+  
+<details><summary>Investigate</summary><blockquote>
 
 - [ ] WIP: Bug on clean start: When start all tasks and join a mob for the first time, we get this error message in the browser console: "The connection to ws://localhost:4000/ was interrupted while the page was loading." And the play button says, "Start (temp hack)" - Not reproducible on Ethan's machine - On Joel's machine, it might be fixed by adding sleep for 2 seconds in the frontend start watch (to make sure other components are compiled first)
 
-## [ ] Enhancements
+</blockquote></details>
 
-### [ ] Alarm for breaks, stretch, etc
+</blockquote></details>
 
-### [ ] Set alarm duration / pausing
+<details><summary>Enhancements</summary><blockquote>
 
-### [ ] Raise hand/make comments
+- [ ] Alarm for breaks, stretch, etc
+- [ ] Set alarm duration / pausing
+- [ ] Raise hand/make comments
+- [ ] RPG
+- [ ] Lists (such as goals)
 
-### [ ] RPG
+</blockquote></details>
 
-### [ ] Lists (such as goals)
+<details><summary>Create VSCode version</summary><blockquote>
+- [ ] TBD
 
-## [ ] Create VSCode version
+</blockquote></details>
 
-## [ ] Refactor & Technical
+<details><summary>Refactor & Technical</summary><blockquote>
 
-### [ ] rethink mobtimer-api
+<details><summary>rethink mobtimer-api</summary><blockquote>
 
-#### [ ] separate into different repos? see [Multi-Repo Proposal](./proposal-multiple-repos.md)
+- [ ] separate into different repos? see [Multi-Repo Proposal](./proposal-multiple-repos.md)
+- [ ] change to d.ts, create type library
+- [ ] create separate time library?
+- [ ] create separate mobtimer library?
 
-#### [ ] change to d.ts, create type library
+</blockquote></details>
 
-#### [ ] create separate time library?
-
-#### [ ] create separate mobtimer library?
-
-#### Other
+<details><summary>Other</summary><blockquote>
 
 - [ ] correct anti-pattern? Pass business logic into UI (no mobtimer.xxxx) - however, consistent
 - [ ] Use wav file directly instead of base64 encoded file to play pneumatic horn when time expires. The file is in the frontend "assets" folder, but not currently used. (There are 2 copies of the file, one using the original name and the other renamed to be shorter. don't currently use them. I tried the following, but it didn't work, perhaps because some additional configuration is needed to recognize .wav files and not treat them as text/html. Here's what I tried: const soundSource = "./assets/sound1828.wav";)
@@ -129,4 +135,9 @@
 - [ ] Figure out way to reduce spurious failing tests (in Jest)
 - [ ] Handle console.log that complete after test completed?
 
-## [ ] Security / Permanent Storage
+</blockquote></details>
+</blockquote></details>
+
+<details><summary>Security / Permanent Storage / Persistence</summary><blockquote>
+- [ ] TBD
+</blockquote></details>
