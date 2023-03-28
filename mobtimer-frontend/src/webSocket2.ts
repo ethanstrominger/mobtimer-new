@@ -6,6 +6,8 @@ export class WebSocket2 implements WebSocket2Type {
   constructor(url: string) {
     console.log("connecting to", url);
     this._socket = io(url);
+    console.log("about to connect");
+    this._socket.connect();
     console.log("opening socket");
     this._socket.on("actionInfo", (msg) => {
       console.log("message: " + msg);
